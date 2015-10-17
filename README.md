@@ -1,3 +1,23 @@
 # Setting-workflow
 ## Использование Sass
-1. gem install sass
+* gem install sass
+* sass --watch .
+* Nesting:
+```CSS
+p{
+  a{
+    color:red;
+    }
+}
+```
+* Advance nesting: 
+```CSS
+  p{
+    a{
+      color:red;
+      &:hover{
+        opacity:0.5;
+        }
+      }
+    }
+```
